@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faktorial</title>
+</head>
+<body>
+    
+
+    <script>
+// menghitung faktorial dari angka 5 menggunakan for 
+        let angka = 5;
+        let faktorial = 1;
+
+        for(let i = 1; i <= angka; i++) {
+// faktorial *=i adalah mempersingkat faktorial=faktorial * i
+            faktorial *=i; 
+        }
+// menampilkan di console
+        console.log(`faktorial dari ${angka} adalah ${faktorial}`)
+// -----------------------------------------------------------------------------------------
+
+// menghitung faktorial dari angka 5 menggunakan while
+        let no = 5;
+        let faktor = 1;
+        const displayNo = no ;
+        while(no >=1) {
+            faktor *=no ;
+            no--
+        }
+        console.log(`faktorial dari ${displayNo} adalah ${faktor}`)
+//------------------------------------------------------------------------------------------
+
+//menghitung faktorial dari angka 5 menggunakan do-while
+        let x = 5;
+        let factorial = 1;
+        const displayX = x;
+        do {
+            factorial *= x;
+            x--
+        }while(x >=1)
+        console.log(`faktorial dari ${displayX} adalah ${factorial}`)
+    </script>
+</body>
+</html>
